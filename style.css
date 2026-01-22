@@ -1,0 +1,347 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Arial";
+    width: 100vw;
+    height: 100vh;
+    filter: blur();
+}
+
+.block1 {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+    background-color: grey;
+}
+
+.container {
+    display: flex;  
+    flex-direction: column;
+    width: 50vw;
+    min-width: 300px;
+    height: 98vh;
+    background-color: rgba(243, 244, 238);
+}
+
+header>h1 {
+    font-size: 20px;
+    font-weight: 200;
+    height: 60px;
+    color: black;
+    margin-top: -20px;
+    margin-left: 15vw;
+    padding: 4px;
+    text-align: end;
+    background-color: rgba(243, 244, 238);
+    position: relative;
+    z-index: 3;
+}
+
+header>.logo {
+    width: 100%;
+    justify-items: end;
+    z-index: 1;
+}
+header>.logo>img {
+    width: 250px;
+    display: flex;
+    z-index: 1;
+}
+
+header>.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+header>.nav-container>nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: normal;
+    padding-top: 8px;
+    padding-right: 10px;
+    margin-right: 15px;
+    height: 90px;
+    width: 60px;
+}
+
+header>.nav-container>nav>a {
+    color: rgb(0, 0, 0);
+}
+
+header>.nav-container>nav>span {
+    color: rgb(0, 0, 0);
+    text-align: end;
+}
+
+header>.nav-container>nav>span:hover {
+    color: #0000ff7a;
+    cursor: pointer;
+}
+
+header>.nav-container>nav>a:hover {
+    color: #0000ff7a;
+}
+
+main {
+    width: 80%;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+main>span {
+    margin-top: 2%;
+    text-align: end;
+}
+
+.about-container {
+    width: 50vw;
+    display: flex;
+    
+    color: grey;
+    font-family: "arial";
+    font-size: 20px;
+}
+#bio {
+    color: black;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.block2 {
+    width: 15px;
+    height: 20px;
+    background-color: grey;
+}
+
+.modal {
+    padding: 3px;
+    display: none;
+    flex-direction: column;
+    border: 2px solid grey;
+    position: absolute;
+    width: 51vw;
+    margin-top: 70px;
+    margin-left: -1vw;
+    box-shadow: 1px 2px 3px rgb(216, 189, 181);
+    background-color: rgba(255, 255, 255, 0.665);
+    z-index: 1;
+
+}
+
+.modal>div {
+    border: 1px solid grey;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+.modal>.work-container {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+.modal>.about-container {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal>button {
+    width: 25px;
+}
+
+.modal>div>p {
+    font-family: "arial";
+    color: grey;
+    text-align: justify;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.modal>.work-container>ul>li {
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 1px;
+
+
+}
+
+
+/***** works.html ******/
+.main-work {
+    width: 97vw;
+    margin-left: 1%;
+    display: flex;
+}
+
+main>p {
+    font-size: 12px;
+}
+
+main>nav {
+    display: flex;
+    flex-direction: column;
+}
+
+main>nav>a>div {
+    border-top: 1.5px solid black;
+    padding-top: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main>nav>.work {
+    border-top: 1.5px solid black;
+    padding-top: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main>nav>.work:hover {
+    color: rgb(218, 247, 166);
+    cursor: pointer;
+}
+
+.date {
+    width: 15%;
+}
+
+.titre {
+    width: 61%;
+}
+
+.type {
+    width: 20%;
+}
+
+main>nav>section {
+    display: none;
+}
+
+main>nav>section>div {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    gap: 5%;
+}
+
+main>nav>section>div>img {
+    width: 60%;
+}
+
+main>nav>section>div>iframe {
+    width: 60%;
+    border: none;
+    height: auto;
+}
+
+main>nav>section>div>p {
+    font-size: 13px;
+    width: 30%;
+    text-align: justify;
+}
+
+
+/***** about.html ******/
+.main-about {
+    width: auto;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding-top: 20px;
+}
+
+.about {
+    width: 55%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about>p {
+    padding: 0;
+    margin: 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.contact>p {
+    padding: 0;
+    margin: 0;
+}
+
+.contact>a {
+    padding-top: 4px;
+    font-size: 14px;
+}
+
+footer {
+    /*display: flex;*/
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+    padding-top: 3px;
+    height: 100%;
+    width: 98%;
+}
+
+footer>h6 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: normal;
+    text-align: end;
+}
+
+footer>ul>li {
+    list-style: none;
+    text-align: end;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: #0000ff7a;
+    cursor: pointer;
+}
+
+#lien {
+    text-decoration: underline;
+}
+
+/* 
+pour commenter, p signifie tout les paragraphe puis acolade et fonction + valeur 
+on peut les additioner p, em, etc ou les normé h1 h2 etc 
+*/
+/*les praragraphe on des lettres de 14pix, ecriture precise*/
+
+
+
+@media (max-width: 800px) {
+
+  .container {
+    width: 85vw;
+  }
+
+}
