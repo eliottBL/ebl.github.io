@@ -204,7 +204,7 @@ main>.contact>ul {
     padding-left: 10px;
     font-size: 11px;
 }
-main>.contact>ul>li {
+main>.contact>ul>li>a {
     margin-top: 2px;
 }
 
