@@ -202,8 +202,12 @@ main>.contact>.job>a {
 main>.contact>ul {
     list-style: none;
     padding-left: 10px;
-    font-size: 15px;
+    font-size: 11px;
 }
+main>.contact>ul>li {
+    margin-top: 2px;
+}
+
 
 a {
     text-decoration: none;
