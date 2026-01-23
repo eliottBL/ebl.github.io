@@ -178,28 +178,28 @@ main>span {
     margin: 0;
 }
 
-.contact {
+main>.contact {
     display: flex;
     flex-direction: column;
 }
 
-.contact>p {
+main>.contact>p {
     padding: 0;
     margin: 0;
 }
 
-.contact>a {
+main>.contact>a {
     padding-top: 4px;
     font-size: 14px;
 }
-.job{
+main>.contact>.job {
     font-size: 12px;
 }
-.job>a {
+main>.contact>.job>a {
     font-size: 14px;
 }
 
-.contact>ul {
+main>.contact>ul {
     list-style: none;
     padding-left: 10px;
     font-size: 15px;
